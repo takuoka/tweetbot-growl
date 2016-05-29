@@ -11,5 +11,14 @@
 cd `dirname $0`
 
 # stop and start
+echo ""
+echo "============ ✨ clear existing task. ============"
 forever stop forever_run.js
+
+echo ""
+echo "============ 🚶 start forever_run.js ============"
 forever start forever_run.js
+forever list
+
+echo ""
+echo "============ 🎉 tweetbot-growl is started. ============"
