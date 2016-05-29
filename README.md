@@ -40,15 +40,15 @@ module.exports = config;
 ```
   You're set.
 
-## run forever
+## Run forever
 
 1. Install [forever](https://github.com/foreverjs/forever): `sudo npm install forever -g`
 
 2. Double click `startup.command`.
 
-Then, start to run this app background forever.
+Then, shellscript start to run this app in background forever.
 
-If you want to stop the task, please execute `forever stop forever_run.js`.
+If you want to stop the forever task, please execute `forever stop forever_run.js`.
 
 ## Start at login
 You can start automatically this app at startup of your Mac,
