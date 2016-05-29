@@ -40,9 +40,9 @@ module.exports = config;
 ```
   You're set.
 
-## Forever running
+## run forever
 
-1. Install [forever](npm install forever -g): `sudo npm install forever -g`
+1. Install [forever](https://github.com/foreverjs/forever): `sudo npm install forever -g`
 
 2. Double click `startup.command`.
 
@@ -54,7 +54,7 @@ If you want to stop the task, please execute `forever stop forever_run.js`.
 You can start automatically this app at startup of your Mac,
 if you set `startup.command` to `Login items` in `System Preferences`.
 
-1. Install [forever](npm install forever -g): `sudo npm install forever -g`
+1. Install [forever](https://github.com/foreverjs/forever): `sudo npm install forever -g`
 
 2. Make it executable: `chmod +x startup.command`
 
