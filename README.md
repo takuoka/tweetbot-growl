@@ -14,15 +14,9 @@ I tired to make it like growl notfications fro twitter with streaming, avatar an
 
 1. Install [growlnotify](http://growl.info/extras.php#growlnotify).
 
-2. Clone this repo
-```
-git clone  git@github.com:joshvermaire/node-tweetbot.git
-```
+2. Clone this repo: `git clone  git@github.com:joshvermaire/node-tweetbot.git`
 
-3. Go into the directory and start it
-```
-  cd node-tweetbot
-```
+3. Go into the directory and start it: `cd node-tweetbot`
 
 4. Setup a [new app](https://dev.twitter.com/apps/new) with Twitter.
 
