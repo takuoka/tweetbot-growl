@@ -3,7 +3,7 @@ var restartIntervalMinute = 10;
 var forever = require('forever-monitor');
 
 var child = new (forever.Monitor)('app.js', {
-	silent: true,
+	silent: false,// silence of output
 });
 
 child.on('restart', function() {
