@@ -50,6 +50,6 @@ Then, `forever_run.js` will start `app.js` and app will restart automatically pe
 If you set `startup.command` to `Login items` of your Mac, you can start this app at startup of Mac,
 
 Because If you open `startup.command`, It will start `forever_run.js`.
-
+0. install [forever](npm install forever -g): `npm install forever -g`
 1. Make it executable: `chmod +x startup.command`
 2. Add this file in `System Preferences > Accounts > Login items`
