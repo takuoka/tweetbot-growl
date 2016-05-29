@@ -1,8 +1,8 @@
-Supplimentary growl support for Tweetbot 
+Supplimentary growl support for Tweetbot
 =========================================
 
 The primary goal of this repo is to provide [growl](http://growl.info/) notifications for [Tweetbot](http://tapbots.com/tweetbot_mac/).
-I really like Tweetbot, but the fact that there are no notifications for my feed requires that I have both Twitter and Tweetbot open at all times.
+I really like Tweetbot, but the fact that [there are no notifications](https://twitter.com/tweetbot/status/329810890918600705) for my feed requires that I have both Twitter and Tweetbot open at all times.
 
 i tired to make it like growl notfications fro twitter with streaming, avatar and tap on notfication to view tweet.
 
@@ -10,20 +10,22 @@ i tired to make it like growl notfications fro twitter with streaming, avatar an
 
 ## Installation
 
-  Install [growlnotify](http://growl.info/extras.php#growlnotify).
+1. Install [growlnotify](http://growl.info/extras.php#growlnotify).
 
-  Clone this repo
+2. Clone this repo
+```
+git clone  git@github.com:joshvermaire/node-tweetbot.git
+```
 
-    git@github.com:joshvermaire/node-tweetbot.git
+3. Go into the directory and start it
+```
+  cd node-tweetbot
+```
 
-  Go into the directory and start it
+4. Setup a [new app](https://dev.twitter.com/apps/new) with Twitter.
 
-    cd node-tweetbot
-
-  Setup a [new app](https://dev.twitter.com/apps/new) with Twitter.
-
-  Add a `config.js` file to include your new keys:
-
+5. Add a `config.js` file to include your new keys:
+``` javascript
     var config;
     config = {
       key: 'Your consumer key',
@@ -33,16 +35,30 @@ i tired to make it like growl notfications fro twitter with streaming, avatar an
       username: 'yourtwitterusername'
     }
     module.exports = config;
+```
 
-  Install dependencies and start the app:
-
-    npm install -d
-    node app
-
+6. Install dependencies and start the app:
+```
+  npm install -d
+  node app
+```
   You're set.
 
-## Todo
+## Forever running
+```
+node forever_run.js
+```
+Then, `forever_run.js` will start `app.js` and app will restart automatically per 10 minutes.
 
-Make this into a command line app:
+## Start at login
+If you want to start this app at statup of Mac,
+You can set `startup.command` to `Login items` of Mac.
 
-*   Ask for username (default in config file)
+When you open `startup.command`, It will start `forever_run.js`.
+
+1. Make it executable
+```
+chmod +x startup.command
+```
+
+2. Add this file in `System Preferences > Accounts > Login items`
