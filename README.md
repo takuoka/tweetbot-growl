@@ -1,12 +1,14 @@
 Supplimentary growl support for Tweetbot
 =========================================
+<img src="https://raw.githubusercontent.com/entotsu/tweetbot-growl/master/sucks.png" width="480" alt="fucking mind" />
 
 The primary goal of this repo is to provide [growl](http://growl.info/) notifications for [Tweetbot](http://tapbots.com/tweetbot_mac/).
-I really like Tweetbot, but the fact that [there are no notifications](https://twitter.com/tweetbot/status/329810890918600705) for my feed requires that I have both Twitter and Tweetbot open at all times.
+I really like Tweetbot, but the fact that [there are no notifications](https://twitter.com/tweetbot/status/329810890918600705) for my feed requires that I have both Twitter and Tweetbot open at all times. This sucks.
 
 I tired to make it like growl notfications fro twitter with streaming, avatar and tap on notfication to view tweet.
 
 ![screenshot](http://i46.tinypic.com/14vu5x0.png)
+
 
 ## Installation
 
