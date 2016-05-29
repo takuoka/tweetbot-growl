@@ -41,16 +41,20 @@ module.exports = config;
   You're set.
 
 ## Forever running
-```
-node forever_run.js
-```
-Then, `forever_run.js` will start `app.js` and app will restart automatically per 10 minutes.
+
+1. Install [forever](npm install forever -g): `sudo npm install forever -g`
+
+2. Double click `startup.command`.
+
+Then, start to run this app background forever.
+
+If you want to stop the task, please execute `forever stop forever_run.js`.
 
 ## Start at login
 You can start automatically this app at startup of your Mac,
 if you set `startup.command` to `Login items` in `System Preferences`.
 
-1. install [forever](npm install forever -g): `npm install forever -g`
+1. Install [forever](npm install forever -g): `sudo npm install forever -g`
 
 2. Make it executable: `chmod +x startup.command`
 
