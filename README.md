@@ -51,9 +51,6 @@ If you set `startup.command` to `Login items` of your Mac, you can start this ap
 
 Because If you open `startup.command`, It will start `forever_run.js`.
 
-1. Make it executable
-```
-chmod +x startup.command
-```
-
+1. Make it executable: `chmod +x startup.command`
+2. 
 2. Add this file in `System Preferences > Accounts > Login items`
