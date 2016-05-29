@@ -22,18 +22,18 @@ I tired to make it like growl notfications fro twitter with streaming, avatar an
 
 5. Add a `config.js` file to include your new keys:
 ``` javascript
-    var config;
-    config = {
-      key: 'Your consumer key',
-      secret: 'Your consumer secret',
-      tokenKey: 'Your access token',
-      tokenSecret: 'Your access token secret',
-      username: 'yourtwitterusername'
-    }
-    module.exports = config;
+var config;
+config = {
+    key: 'Your consumer key',
+    secret: 'Your consumer secret',
+    tokenKey: 'Your access token',
+    tokenSecret: 'Your access token secret',
+    username: 'yourtwitterusername'
+}
+module.exports = config;
 ```
 
-6. Install dependencies and start the app:
+ 6\. Install dependencies and start the app:
 ```
   npm install -d
   node app
