@@ -44,7 +44,9 @@ module.exports = config;
 
 1. Install [forever](https://github.com/foreverjs/forever): `sudo npm install forever -g`
 
-2. Double click `startup.command`.
+2. Make it executable: `chmod +x startup.command`
+
+3. Double click `startup.command`.
 
 Then, shellscript start to run this app in background forever.
 
